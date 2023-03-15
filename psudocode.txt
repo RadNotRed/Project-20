@@ -1,0 +1,10 @@
+Deck: This class represents a deck of 52 playing cards, and it contains a constructor, shuffle(), and drawCard() methods.
+In the constructor, an empty cards ArrayList is initialized, and then 52 playing cards are created and added to the cards ArrayList.
+The shuffle() method shuffles the cards ArrayList using the Collections.shuffle() method, while the drawCard() method removes and
+returns the first card from the cards ArrayList. If the cards ArrayList is empty, the drawCard() method returns null.
+
+Card: This is a record class with two fields, suit of type String and value of type int, and it overrides the toString() method
+to return a string representation of the card in the format of "value of suit". The toString() method creates the string
+representation of the card by concatenating the value and suit fields. If the value field is 1, 11, 12, or 13, the method
+replaces the value with the corresponding name for Ace, Jack, Queen, or King, respectively, before concatenating it with the
+suit field. Finally, the toString() method returns the string representation of the card.
